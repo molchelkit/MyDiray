@@ -1,7 +1,6 @@
 @font-face {
-	font-family: 'PetrovSans'; 
-	src: local('PetrovSans'),
-		url(/fonts/PetrovSans-Trial-Regular.otf); 
+	font-family: 'PetrovSans';
+    src: url(/static/fonts/PetrovSans-Trial-Regular.otf)
 }
 
 * {
@@ -33,7 +32,6 @@ body {
     width: 64px;
     height: 64px;
     background-color: #344E41;
-    text-align: center;
 }
 .profile {
     width: 196px;
