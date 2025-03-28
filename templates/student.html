@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student.css') }}">
+{% endblock %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+
+{% block nav %}
+    <div class="student_nav">
+        <a href="#"><div class="student_nav_block student_nav_evaluations">Оценки</div></a>
+        <a href="#"><div class="student_nav_block student_nav_inquiry">Рассписание</div></a>
+        <a href="#"><div class="student_nav_block student_nav_homework">Домашнее задание</div></a>
+    </div>
+{% endblock %}
+
+
+{% block main %}
+
+{% endblock %}

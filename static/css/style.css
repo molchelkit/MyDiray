@@ -64,4 +64,5 @@ body {
     height: 100%;
     background-color: #DAD7CD;
     display: flex;
+    padding: 16px;
 }

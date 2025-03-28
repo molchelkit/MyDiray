@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+{% endblock %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+
+{% block nav %}
+    
+{% endblock %}
+
+
+{% block main %}
+    <div class="register">
+        <form action="GET" class="register_form">
+            <input type="text" name="register_login" class="register_form_input"> <br>
+            <input type="password" name="register_password" class="register_form_input"> <br>
+            <input type="password" name="register_password2" class="register_form_input"> <br>
+            <input type="submit" id="register_form_button" value="Создать">
+        </form>
+    </div>
+{% endblock %}

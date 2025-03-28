@@ -1,0 +1,25 @@
+{% extends 'teacher.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher_evaluations.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="teacher_evaluations">
+        <div class="teacher_evaluations_content">
+            <div class="teacher_evaluations_console">
+                <!-- CONSOLE -->
+            </div>
+            <form action="GET" class="teacher_evaluations_form">
+                <input type="date" name="teacher_evaluations_date" class="teacher_evaluations_date">
+                <input type="text" name="teacher_evaluations_code_student" class="teacher_evaluations_code_student" placeholder="Код студента">
+                <input type="text" name="teacher_evaluations_code_object" class="teacher_evaluations_code_object" placeholder="Код предмета">
+                <input type="text" name="teacher_evaluations_evaluation" class="teacher_evaluations_evaluation" placeholder="Оценка">
+                <input type="submit" value="Подтвердить" id="teacher_evaluations_button">
+            </form>
+        </div>
+        
+    </div>
+{% endblock %}

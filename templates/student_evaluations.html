@@ -1,0 +1,22 @@
+{% extends 'student.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student_evaluations.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="student_evaluations">
+        <div class="student_evaluations_content">
+            <div class="student_evaluations_console">
+                <!-- CONSOLE -->
+            </div>
+            <form action="GET" class="teacher_evaluations_form">
+                <input type="date" name="student_evaluations_date" class="student_evaluations_date">
+                <input type="submit" value="Подтвердить" id="student_evaluations_button">
+            </form>
+        </div>
+        
+    </div>
+{% endblock %}

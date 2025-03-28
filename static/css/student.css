@@ -1,0 +1,18 @@
+.student_nav {
+    padding: 16px;
+}
+
+.student_nav_block {
+    height: 64px;
+    background-color: #A3B18A;
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.student_nav_homework {
+    font-size: 20px;
+}

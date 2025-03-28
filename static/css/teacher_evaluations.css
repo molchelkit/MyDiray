@@ -1,0 +1,67 @@
+.teacher_evaluations {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+}
+
+.teacher_evaluations_content {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.teacher_evaluations_console {
+    display: flex;
+    background-color: #A3B18A;
+    margin-bottom: 16px;
+    flex: 1 1 auto;
+    padding: 8px;
+}
+
+.teacher_evaluations_form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.teacher_evaluations_form * {
+    border: none;
+}
+
+.teacher_evaluations_date {
+    width: 192px;
+    height: 64px;
+    font-size: 32px;
+    color: #DAD7CD;
+    text-align: center;
+}
+
+.teacher_evaluations_code_student {
+    width: 256px;
+    height: 64px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.teacher_evaluations_code_object {
+    width: 256px;
+    height: 64px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.teacher_evaluations_evaluation {
+    width: 192px;
+    height: 64px;
+    font-size: 32px;
+    text-align: center;
+}
+
+#teacher_evaluations_button {
+    width: 192px;
+    height: 64px;
+    font-size: 24px;
+    background-color: #344E41;
+    color: #fff;
+    text-align: center;
+}
