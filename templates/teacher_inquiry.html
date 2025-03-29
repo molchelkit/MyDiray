@@ -1,0 +1,106 @@
+{% extends 'teacher.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher_inquiry.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="teacher_inquiry">
+        <form action="GET" class="teacher_inquiry_form">
+            <div class="teacher_inquiry_content">
+                <div class="teacher_inquiry_content_block1">
+                    <div class="teacher_inquiry_week_item">
+                        <div class="teacher_inquiry_week_title">Понедельник</div>
+                        <div class="teacher_inquiry_week_item_content">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                        </div>
+                    </div>
+                    <div class="teacher_inquiry_week_item">
+                        <div class="teacher_inquiry_week_title">Вторник</div>
+                        <div class="teacher_inquiry_week_item_content">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                        </div>
+                    </div>
+                    <div class="teacher_inquiry_week_item">
+                        <div class="teacher_inquiry_week_title">Среда</div>
+                        <div class="teacher_inquiry_week_item_content">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                        </div>
+                    </div>
+                </div>
+                <div class="teacher_inquiry_content_block2">
+                    <div class="teacher_inquiry_week_item">
+                        <div class="teacher_inquiry_week_title">Четверг</div>
+                        <div class="teacher_inquiry_week_item_content">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                        </div>
+                    </div>
+                    <div class="teacher_inquiry_week_item">
+                        <div class="teacher_inquiry_week_title">Пятница</div>
+                        <div class="teacher_inquiry_week_item_content">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                        </div>
+                    </div>
+                    <div class="teacher_inquiry_week_item">
+                        <div class="teacher_inquiry_week_title">Суббота</div>
+                        <div class="teacher_inquiry_week_item_content">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                            <input type="text" placeholder="#" class="teacher_inquiry_week_lesson">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teacher_inquiry_menu">
+                <div class="teacher_inquiry_menu_block">
+                    <button class="teacher_inquiry_menu_left"><img src="{{ url_for('static', filename='img/week-left.svg') }}" alt="L"></button>
+                    <div class="teacher_inquiry_menu_center">Неделя</div>
+                    <button class="teacher_inquiry_menu_right"><img src="{{ url_for('static', filename='img/week-right.svg') }}" alt="R"></button>
+                </div>
+                <input type="submit" value="Подтвердить" id="teacher_inquiry_button">
+            </div>
+        </form>
+    </div>
+{% endblock %}
