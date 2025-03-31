@@ -17,6 +17,10 @@ def login():
 def register():
     return render_template('register.html', title='Регистрация')
 
+@app.route('/profile')
+def profile():
+    return render_template('profile.html', title='Профиль')
+
 @app.route('/teacher')
 def teacher():
     return render_template('teacher.html', title='Преподаватель')
@@ -32,6 +36,10 @@ def teacher_inquiry():
 @app.route('/teacher/homework')
 def teacher_homework():
     return render_template('teacher_homework.html', title='Преподаватель - Домашнее задание')
+
+@app.route('/teacher/homework/add')
+def teacher_homework_add():
+    return render_template('teacher_homework_add.html', title='Преподаватель - Добавить омашнее задание')
 
 @app.route('/teacher/reports')
 def teacher_reports():

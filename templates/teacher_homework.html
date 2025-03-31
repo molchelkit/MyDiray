@@ -1,0 +1,18 @@
+{% extends 'teacher.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher_homework.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="teacher_homework_view">
+        <div class="teacher_homework_view_content">
+            <!-- CONTENT -->
+        </div>
+        <div class="teacher_homework_view_menu">
+            <a href="{{ url_for('teacher_homework_add') }}" class="teacher_homework_view_button">Добавить задание</a>
+        </div>
+    </div>
+{% endblock %}

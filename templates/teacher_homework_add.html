@@ -1,0 +1,23 @@
+{% extends 'teacher.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/teacher_homework_add.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="teacher_homework">
+        <form action="GET" class="teacher_homework_form">
+            <div class="teacher_homework_content">
+                <input type="text" name="teacher_homework_title" id="teacher_homework_title" placeholder="Название задания"><br>
+                <textarea name="teacher_homework_description" id="teacher_homework_description" placeholder="Описание"></textarea><br>
+                <input type="text" name="teacher_homework_yadisk" id="teacher_homework_yadisk" placeholder="Ссылка на яндекс диск">
+            </div>
+            <div class="teacher_homework_menu">
+                <input type="text" name="teacher_homework_code_object" id="teacher_homework_code_object" placeholder="Код предмета">
+                <input type="submit" value="Подтвердить" id="teacher_homework_button">
+            </div>
+        </form>
+    </div>
+{% endblock %}
