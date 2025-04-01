@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, redirect, url_for
 
 app = Flask(__name__)
 
-func_name = 'teacher'
+func_name = 'student_inquiry'
 
 @app.route('/')
 def index():
@@ -31,7 +31,7 @@ def teacher_evaluations():
 
 @app.route('/teacher/inquiry')
 def teacher_inquiry():
-    return render_template('teacher_inquiry.html', title='Преподаватель - Рассписание')
+    return render_template('teacher_inquiry.html', title='Преподаватель - Расписание')
 
 @app.route('/teacher/homework')
 def teacher_homework():
@@ -53,6 +53,14 @@ def student():
 @app.route('/student/evaluations')
 def student_evaluations():
     return render_template('student_evaluations.html', title='Студент - Оценки')
+
+@app.route('/student/inquiry')
+def student_inquiry():
+    return render_template('student_inquiry.html', title='Студент - Расписание')
+
+@app.route('/student/homework')
+def student_homework():
+    return render_template('student_homework.html', title='Студент - Домашнее задание')
 
 if __name__ == '__main__':
     app.run(debug=True)

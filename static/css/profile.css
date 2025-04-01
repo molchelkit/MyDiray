@@ -38,6 +38,17 @@
     background-color: #fff;
 }
 
+.profile_exit {
+    width: 192px;
+    height: 64px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #ff0000;
+}
+
 #profile_user_nickname {
     width: 512px;
     height: 64px;
@@ -48,17 +59,45 @@
 }
 
 #profile_user_date {
-
+    width: 192px;
+    height: 64px;
+    font-size: 24px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
 #profile_user_description {
+    width: 768px;
+    height: 384px;
+    font-size: 24px;
+    display: flex;
+    padding: 8px;
+}
 
+#profile_change_password {
+    width: 384px;
+    height: 64px;
+    font-size: 24px;
+    display: flex;
+    padding: 8px;
+    margin-top: 16px;
 }
 
 .profile_menu {
-
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 #profile_form_button {
-
+    width: 192px;
+    height: 64px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #344E41;
+    color: #fff;
 }

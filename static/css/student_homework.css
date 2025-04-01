@@ -1,0 +1,31 @@
+.student_homework_view {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.student_homework_view_content {
+    background-color: #A3B18A;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: #A3B18A;
+    margin-bottom: 16px;
+    flex: 1 1 auto;
+}
+
+.student_homework_view_menu {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.student_homework_code_object {
+    width: 192px;
+    height: 64px;
+    font-size: 24px;
+    display: flex;
+    border: none;
+    padding: 8px;
+}

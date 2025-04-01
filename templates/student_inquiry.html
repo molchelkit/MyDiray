@@ -1,0 +1,29 @@
+{% extends 'student.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student_inquiry.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="student_inquiry">
+        <div class="student_inquiry_container">
+            <div class="student_inquiry_content1">
+                <div class="student_inquiry_lesson"></div>
+                <div class="student_inquiry_lesson"></div>
+                <div class="student_inquiry_lesson"></div>
+            </div>
+            <div class="student_inquiry_content2">
+                <div class="student_inquiry_lesson"></div>
+                <div class="student_inquiry_lesson"></div>
+                <div class="student_inquiry_lesson"></div>
+            </div>
+        </div>
+        <form action="GET" class="student_inquiry_menu">
+            <button name="student_inquiry_menu_left" id="student_inquiry_menu_left"><img src="{{ url_for('static', filename='img/week-left.svg') }}" alt="L"></button>
+            <div class="student_inquiry_menu_center">Неделя</div>
+            <button name="student_inquiry_menu_right" id="student_inquiry_menu_right"><img src="{{ url_for('static', filename='img/week-right.svg') }}" alt="R"></button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,60 @@
+.student_inquiry {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.student_inquiry_container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 16px;
+    flex: 1 1 auto;
+    margin-bottom: 16px;
+}
+
+.student_inquiry_content1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+
+.student_inquiry_content2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.student_inquiry_lesson {
+    width: 320px;
+    height: 360px;
+    background-color: #A3B18A;
+    padding: 8px;
+    font-size: 24px;
+}
+
+.student_inquiry_menu {
+    width: 100%;
+    display: flex;
+}
+
+#student_inquiry_menu_left {
+    width: 64px;
+    height: 64px;
+    border: none;
+}
+
+.student_inquiry_menu_center {
+    width: 192px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+#student_inquiry_menu_right {
+    width: 64px;
+    height: 64px;
+    border: none;
+}

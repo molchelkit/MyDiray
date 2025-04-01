@@ -1,0 +1,18 @@
+{% extends 'student.html' %}
+
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/student_homework.css') }}">
+{% endblock %}
+
+
+{% block main %}
+    <div class="student_homework_view">
+        <div class="student_homework_view_content">
+            <!-- CONTENT -->
+        </div>
+        <div class="student_homework_view_menu">
+            <input type="text" name="student_homework_code_object" class="student_homework_code_object" placeholder="Код Предмета">
+        </div>
+    </div>
+{% endblock %}

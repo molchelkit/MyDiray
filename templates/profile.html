@@ -23,14 +23,15 @@
                         <!-- CODE -->
                          КОД
                     </div>
-                    <a href="{{ url_for('login') }}">Выйти</a>
+                    <a href="{{ url_for('login') }}" class="profile_exit">Выйти</a>
                 </div>
-                <input type="text" name="profile_user_nickname" id="profile_user_nickname">
+                <input type="text" name="profile_user_nickname" id="profile_user_nickname" placeholder="ФИО">
                 <input type="date" name="profile_user_date" id="profile_user_date">
-                <textarea name="profile_user_description" id="profile_user_description"></textarea>
+                <textarea name="profile_user_description" id="profile_user_description" placeholder="Дополнительная информация"></textarea>
+                <input type="password" name="profile_change_password" id="profile_change_password" placeholder="Новый пароль">
             </div>
            <div class="profile_menu">
-                <input type="button" value="Подтвердить" name="profile_form_button" id="profile_form_button">
+                <input type="submit" value="Подтвердить" name="profile_form_button" id="profile_form_button">
            </div>
         </form>
     </div>

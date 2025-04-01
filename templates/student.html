@@ -11,9 +11,9 @@
 
 {% block nav %}
     <div class="student_nav">
-        <a href="#"><div class="student_nav_block student_nav_evaluations">Оценки</div></a>
-        <a href="#"><div class="student_nav_block student_nav_inquiry">Рассписание</div></a>
-        <a href="#"><div class="student_nav_block student_nav_homework">Домашнее задание</div></a>
+        <a href="{{ url_for('student_evaluations') }}"><div class="student_nav_block student_nav_evaluations">Оценки</div></a>
+        <a href="{{ url_for('student_inquiry') }}"><div class="student_nav_block student_nav_inquiry">Расписание</div></a>
+        <a href="{{ url_for('student_homework') }}"><div class="student_nav_block student_nav_homework">Домашнее задание</div></a>
     </div>
 {% endblock %}
 
